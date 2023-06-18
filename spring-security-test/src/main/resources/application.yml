@@ -1,5 +1,4 @@
-server:
-  port:80
+server: port:80
 
 spring:
   h2:
@@ -8,7 +7,7 @@ spring:
     path: /h2-console
 
   jpa:
-    database: mysql   # 추가 해준 부분
+    database: mysql # 추가 해준 부분
     #database-platform: org.hibernate.dialect.MySQL5InnoDBDialect # 추가 해준 부분
     show-sql: true
 
@@ -21,11 +20,11 @@ spring:
         #org.hibernate.dialect.MySQL5InnoDBDialect
       hibernate:
         format_sql: true
-        
+
   datasource:
-    url: jdbc:mysql://database-1.c78kyz1h0q9p.us-east-2.rds.amazonaws.com:3306/testDB?createDatabaseIfNotExist=true
-    username: waganawa
-    password: youareadie2!A
+    url: jdbc:mysql://RDS/testDB?createDatabaseIfNotExist=true
+    username: ROOT
+    password: PASSWORD
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 handlebars:
